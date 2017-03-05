@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:id="@+id/container"
+              android:orientation="vertical">
+
+
+    <include layout="@layout/view_camera_and_title"
+             />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/crime_details_label"
+        style="?android:listSeparatorTextViewStyle"
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button android:id="@+id/crime_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_weight="1"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/crime_time"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+        <CheckBox android:id="@+id/crime_solved"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="16dp"
+                  android:layout_marginRight="16dp"
+                  android:gravity="bottom"
+                  android:layout_marginTop="0dp"
+                  android:text="@string/crime_solved_label"
+                  android:layout_gravity="top|center_horizontal"
+            />
+
+
+    <Button
+        android:text="@string/crime_suspect_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/choose_suspect"/>
+
+    <Button
+        android:text="@string/crime_report_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/send_report"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom">
+
+        <Button
+            android:text="UPDATE CRIME"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/update_crime"/>
+
+        <Button
+            android:text="Delete Crime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/delete_crime"
+            android:layout_gravity="bottom"
+            />
+    </LinearLayout>
+
+</LinearLayout>
